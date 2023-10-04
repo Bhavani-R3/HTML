@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 400px;
+        }
+        table,tr,td,th{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        tr,td,th{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Registration Form</h3>
+    <!-- 
+        placeholder => hint to the user
+        value => default value
+        readonly => write protect or make the field readonly
+     -->
+
+    <form method="post" enctype="multipart/form-data" autocomplete="off">
+        <table>
+          <tr>
+            <th>Enter Your First Name</th>
+            <td>
+                <input type="text" name="firstName" placeholder="first name here" value="Bhavani" readonly required>
+            </td>
+          </tr>
+
+          <tr>
+            <th>Enter Your Last Name</th>
+            <td>
+                <input type="text" name="lastName" autofocus required>
+            </td>
+          </tr>
+
+          <tr>
+            <th>Enter Your Password</th>
+            <td>
+                <input type="password" name="pass" id="pass" required>
+            </td>
+          </tr>
+
+          <tr>
+            <th>ReEnter Your Password</th>
+            <td>
+                <input type="password" name="confirmPass" id="confirmPass" required>
+            </td>
+          </tr>
+
+          <tr>
+            <th>Enter Your Email</th>
+            <td>
+                <input type="email" name="mail" id="mail" required>
+            </td>
+          </tr>
+
+          <tr>
+            <th>Enter Your Mobile</th>
+            <td>
+                <input type="number" name="mobile" id="mobile" required>
+            </td>
+          </tr>
+
+          <tr>
+            <th>Enter Your Address</th>
+            <td>
+                <textarea name="address" id="address" cols="22" rows="7" required></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <th>Select Gender</th>
+            <td>
+                <label for="">Male <input type="radio" name="gender" id="" value="male" required>
+                </label>
+                <label for="">Female <input type="radio" name="gender" id="" value="female" checked required>
+                </label> 
+            </td>
+          </tr>
+
+          <tr>
+            <th>Select Your Hobbies</th>
+            <td>
+                <label for="hobbies1">hobby1 <input type="checkbox" name="hobbies1" id="hobbies1" value="cycling">
+                </label>
+                <label for="hobbies2">hobby2 <input type="checkbox" name="hobbies2" id="hobbies2" value="riding" checked>
+                </label> 
+                <label for="hobbies3">hobby3 <input type="checkbox" name="hobbies3" id="hobbies3" value="trekking">
+                </label> 
+            </td>
+          </tr>
+
+          <tr>
+            <th>Select Your DOB</th>
+            <td>
+                <input type="date" name="dob" id="dob" required>
+            </td>
+          </tr>
+            
+          <tr>
+            <th>Select Your Country</th>
+            <td>
+              <select name="country" id="country" multiple>
+                <option value="null">Choose your Country</option>
+                <option value="india">India</option>
+                <option value="nepal">Nepal</option>
+                <option value="japan">Japan</option>
+                <option value="bhuthan">Bhuthan</option>
+                <option value="other">other</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <th>Upload Your Pic</th>
+            <td>
+              <input type="file" name="upload" id="upload" required>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <input type="submit" value="Save My Data">
+              <input type="reset" value="Reset Data">
+            </td>
+          </tr>
+        </table>
+    </form>
+</body>
+</html>

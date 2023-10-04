@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action="" method="post">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Fullname" required>
+        </div>
+
+        <div>
+            <label for="father">Father's Name</label>
+            <input type="text" name="father" id="father" required>
+        </div>
+
+        <div>
+            <label for="mother">Mother's Name</label>
+            <input type="text" name="mother" id="mother" required>
+        </div>
+
+        <div>
+            <label for="phone">Phone Number</label>
+            <input type="number" name="phone" id="phone" placeholder="99xxx-xxxxx" required>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="sample@example.com" required>
+        </div>
+
+        <div>
+            <label for="gender">Gender</label>
+            <main>
+              <input type="radio" name="gender" id="" value="male" required> Male
+              <input type="radio" name="gender" id="" value="female" required> FeMale
+              <input type="radio" name="gender" id="" value="others" required> Others
+            </main>
+        </div>
+    
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="" required>
+        </div>
+
+        <div>
+            <label for="address">Address</label>
+            <textarea name="address" id="" cols="30" rows="5" required></textarea>
+        </div>
+
+        <div>
+            <label for="blood">Blood Group</label>
+            <select name="blood" id="">
+                <option value="null">Select</option>
+                <option value="a+">A+</option>
+                <option value="b+">B+</option>
+                <option value="ab+">AB+</option>
+                <option value="ab-">AB-</option>
+                <option value="o+">O+</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="dept">Department</label>
+            <main>
+              <input type="radio" name="dept" id="" value="cse" required> CSE
+              <input type="radio" name="dept" id="" value="eee" required> EEE
+              <input type="radio" name="dept" id="" value="bba" required> BBA
+            </main>
+        </div>
+
+        <div>
+            <label for="course">Course</label>
+            <main>
+              <input type="checkbox" name="c1" id="" value="c" required> C
+              <input type="checkbox" name="c2" id="" value="c++" required> C++
+              <input type="checkbox" name="c3" id="" value="java" required> JAVA
+              <input type="checkbox" name="c4" id="" value="ai" required> AI
+              <input type="checkbox" name="c5" id="" value="ml" required> ML
+              <input type="checkbox" name="c6" id="" value="robotics" required> Robotics
+            </main>
+        </div>
+
+        <div>
+            <label for="photo">Photo</label>
+            <input type="file" name="photo" id="" required>
+        </div>
+
+        <div>
+            <input type="submit" class="green">
+            <input type="reset" class="red">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        //*** Form Attributes ***//
+        action => server file/path()
+        method => POST -> hide the data
+                  GET -> display the data in URL address bar ?user=admin&pass=1233 (query)
+        autocomplete => clear the history -> off/on (default)
+        enctype => encrypt type -> 
+         form data except file => urlencoded 
+         file => (multipart/form-data)
+         plain string => text/plain         
+     -->
+
+     <form action="http://localhost/server.php" method="get" autocomplete="off" enctype="">
+        <fieldset>
+            <legend>Login Form</legend>
+
+            <label for="user">Username</label>
+            <input type="text" name="user" id="user" value="admin@gmail.com" readonly required>
+
+            <br><br>
+
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass" value="" placeholder="min 6 char and above" minlength="6" maxlength="10" required>
+
+            <br><br>
+
+            <input type="submit" value="SignIn">
+            <input type="reset" value="Clear">
+        </fieldset>
+     </form>
+     <!-- 
+        label => label for input tag
+        type => the type of input
+        name => carry the value entered inside the input
+        value => default value
+        placeholder => hint for user
+        required => mandatory input
+        readonly => restricts  the user to edit the input
+        hidden => hide the input field
+      -->
+</body>
+</html>
